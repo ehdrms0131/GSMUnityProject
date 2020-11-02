@@ -6,20 +6,9 @@ using UnityEngine;
 public class GetWeapon : MonoBehaviour
 {
     public PlayerWeaponManagement PW;
-    public string weaponName = "Micro_Uzi";
-    public float rpm = 600;
-    public float bulletSpeed = 10f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string weaponName = "Micro_Uzi";//무기 이름
+    public float rpm = 600; //초당공격속도
+    public float bulletSpeed = 10f; //총알 속도
 
     public void OnCollisionEnter2D (Collision2D collision)
     {

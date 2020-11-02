@@ -5,18 +5,10 @@ using UnityEngine;
 public class GetCursorPosition : MonoBehaviour
 {
     public GetCursorPosition meow;
-    public Vector3 mousePos;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Vector3 mousePos; //마우스위치를 Vector3로 받음
 
-    // Update is called once per frame
     void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
-        
-        
     }
 }

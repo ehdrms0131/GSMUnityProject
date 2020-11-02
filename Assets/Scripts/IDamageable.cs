@@ -1,9 +1,4 @@
-﻿              
-using UnityEngine;
-
-
-
-    // Start is called before the first frame update
+﻿using UnityEngine;
   
     public interface IDamageable
     {

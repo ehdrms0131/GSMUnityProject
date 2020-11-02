@@ -13,14 +13,11 @@ public class PlayerFire : MonoBehaviour
     public float fireDelay;
     public float timer;
     public const float minute = 60;
-    // Start is called before the first frame update
-  
     void Start()
     {
         fireDelay = 1 / (GW.rpm / minute);
     }
 
-    // Update is called once per frame
     void Update()
     {
         

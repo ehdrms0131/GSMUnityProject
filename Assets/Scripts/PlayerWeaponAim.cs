@@ -6,12 +6,7 @@ public class PlayerWeaponAim : MonoBehaviour
 {
     Vector3 len;
     public Vector3 mousePos;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         //len = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;

@@ -25,7 +25,7 @@ public class LivingEntity : MonoBehaviour
     }
 
     
-    protected void GetDamage(float damage, float energyDamage ,float Penetration, float EnergyPenetration)
+    protected void GetDamage(float damage, float energyDamage ,float Penetration, float EnergyPenetration)//데미지공식
     {
         
 
@@ -70,14 +70,4 @@ public class LivingEntity : MonoBehaviour
             collision.gameObject.GetComponent<PlayerBullet>().nextBulletEnergyPenetration);
     }
 
-  
-
-    // Start is called before the first frame update
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
