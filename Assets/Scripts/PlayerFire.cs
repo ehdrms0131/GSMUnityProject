@@ -21,7 +21,7 @@ public class PlayerFire : MonoBehaviour
     void Update()
     {
         
-        if (PWM.fullAuto == false && Input.GetButtonDown("Fire1"))
+        if (PWM.fullAuto == false && Input.GetButtonDown("Fire1"))//좌클릭발사
         {
            
             GameObject bullet = Instantiate(bulletFactory);

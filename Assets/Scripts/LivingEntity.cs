@@ -15,8 +15,6 @@ public class LivingEntity : MonoBehaviour
     protected float nextArmor;
     protected float nextEnergyArmor;
 
-
-
     void Start()
     {
         health = myStartingHealth;
@@ -27,18 +25,16 @@ public class LivingEntity : MonoBehaviour
     
     protected void GetDamage(float damage, float energyDamage ,float Penetration, float EnergyPenetration)//데미지공식
     {
-        
-
         if (100 + Armor - Penetration > 0)
         {
-            health -= 100 / (100 + Armor - Penetration) * damage;
+            health -= 100 / (100 + Armor - Penetration) * damage; //물관 계산식
             print(100 / (100 + Armor - Penetration) * damage + "데미지 입음");
         }
         else health -= damage;
         if (100 + EnergyArmor - EnergyPenetration > 0)
         {
             
-            health -= 100 / (100 + EnergyArmor - EnergyPenetration) * energyDamage;
+            health -= 100 / (100 + EnergyArmor - EnergyPenetration) * energyDamage; //마관 계산식
             print(100 / (100 + EnergyArmor - EnergyPenetration) * energyDamage + "데미지 입음");
         }
         else health -= energyDamage;
@@ -60,7 +56,6 @@ public class LivingEntity : MonoBehaviour
             
         }
     }
-    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("충돌 감지됨");
