@@ -20,6 +20,7 @@ namespace Assets.Scripts
         }
         static void Main(string[] args)
         {
+            //예제 클론코딩
             Enumtest a = Enumtest.none | Enumtest.move;
             // & 연산자로 플래그 체크
             if ((a & Enumtest.move) != 0)
