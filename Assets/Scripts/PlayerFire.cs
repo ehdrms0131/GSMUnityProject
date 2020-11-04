@@ -35,16 +35,13 @@ public class PlayerFire : MonoBehaviour
             timer += Time.deltaTime;
             if (fireDelay <= timer)
             {
-               
+
                 GameObject bullet = Instantiate(bulletFactory);
 
                 bullet.transform.position = muzzle.position;
                 bullet.transform.right = muzzle.right;
                 timer = 0;
-               
             }
-
         }
     }
-    
 }
