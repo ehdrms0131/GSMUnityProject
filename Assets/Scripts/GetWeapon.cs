@@ -9,24 +9,13 @@ public class GetWeapon : MonoBehaviour
     public string weaponName = "Micro_Uzi";
     public float rpm = 600;
     public float bulletSpeed = 10f;
-    // Start is called before the first frame update
-    void Start()
+    public void OnCollisionEnter2D (Collision2D collision)//접촉유무
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void OnCollisionEnter2D (Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player")) {
+        if (collision.collider.CompareTag("Player")) 
+        {
             Debug.Log("플레이어가 무기를 획득했습니다");
-            PW.firstWeapon = weaponName;
-            Destroy(gameObject);
+            PW.firstWeapon = weaponName; //플레이어 무기에 무기이름을 받아옴
+            Destroy(gameObject); //없애버려 그냥~
         }
     }
 
