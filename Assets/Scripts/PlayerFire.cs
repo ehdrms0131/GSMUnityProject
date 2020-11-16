@@ -20,15 +20,12 @@ public class PlayerFire : MonoBehaviour
 
     void Update()
     {
-        
         if (PWM.fullAuto == false && Input.GetButtonDown("Fire1"))//좌클릭발사
-        {
-           
+        {      
             GameObject bullet = Instantiate(bulletFactory);
             
             bullet.transform.position = muzzle.position;
-            bullet.transform.right = muzzle.right;
-           
+            bullet.transform.right = muzzle.right;  
         }
         else if(PWM.fullAuto == true && Input.GetButton("Fire1"))
         {

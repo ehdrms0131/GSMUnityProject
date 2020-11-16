@@ -12,7 +12,7 @@ public class GetWeapon : MonoBehaviour
 
     public void OnCollisionEnter2D (Collision2D collision)
     {
-        if (collision.collider.CompareTag("Player")) 
+        if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("플레이어가 무기를 획득했습니다");
             PW.firstWeapon = weaponName;

@@ -52,8 +52,7 @@ public class LivingEntity : MonoBehaviour
             dead = true;
             health = 0;
             gameObject.SetActive(false);
-            Destroy(gameObject);
-            
+            Destroy(gameObject);   
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
