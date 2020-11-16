@@ -15,7 +15,7 @@ public class GetWeapon : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("플레이어가 무기를 획득했습니다");
-            PW.firstWeapon = weaponName;
+            PW.firstWeapon = weaponName;//무기 이름 받아옴
             Destroy(gameObject);
         }
     }
